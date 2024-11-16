@@ -13,8 +13,8 @@ class $modify(MenuLayer) {
         
 		// All I wanted to do was add a "v" before the game version but c++ is stupid and I hate it
 		char curGDVer[100];
-		strcpy(curGDVer, "v");
-		strcat(curGDVer, Loader::get()->getGameVersion().data());
+		strcpy_s(curGDVer, "v");
+		strcat_s(curGDVer, Loader::get()->getGameVersion().data());
 
 		auto verLabel = CCLabelBMFont::create(curGDVer, "bigFont.fnt");
 		
