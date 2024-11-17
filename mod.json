@@ -8,10 +8,14 @@
 	},
 	"id": "neonyaa.showgameversion",
 	"name": "Show Game Version",
-	"version": "v1.0.2",
+	"version": "v1.0.3",
 	"developer": "NeoNyaa",
 	"description": "Shows the GD version number on the main menu",
 	"tags": ["universal", "enhancement", "interface", "utility"],
+	"links": {
+		"source": "https://github.com/NeoNyaa/Geode-ShowGameVersion",
+		"homepage": "https://github.com/NeoNyaa/Geode-ShowGameVersion"
+	},
 	"settings": {
 		"version-position": {
 			"type": "string",
