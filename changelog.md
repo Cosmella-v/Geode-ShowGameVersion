@@ -8,3 +8,6 @@
 
 # v1.0.4
 - Forgot to update changelog.md
+
+# v1.0.5
+- Fixed 2 back to back instances of the word "the" in README.md
