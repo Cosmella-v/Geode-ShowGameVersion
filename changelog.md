@@ -11,3 +11,6 @@
 
 # v1.0.5
 - Fixed 2 back to back instances of the word "the" in README.md
+
+# v1.0.6
+- Improved the v + versionCode concat code
