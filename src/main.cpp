@@ -10,13 +10,10 @@ class $modify(MenuLayer) {
 		auto confPos = Mod::get()->getSettingValue<std::string>("version-position");
 		auto confOpacity = Mod::get()->getSettingValue<double>("version-opacity");
 		auto confDebug = Mod::get()->getSettingValue<bool>("debug-enabled");
-        
-		// All I wanted to do was add a "v" before the game version but c++ is stupid and I hate it
-		char curGDVer[100];
-		strcpy(curGDVer, "v");
-		strcat(curGDVer, Loader::get()->getGameVersion().data());
-
-		auto verLabel = CCLabelBMFont::create(curGDVer, "bigFont.fnt");
+		
+		// Got some help in DMs with this, cpp really isnt that intuitive to me.
+		auto curGDVer = "v" + Loader::get()->getGameVersion();
+		auto verLabel = CCLabelBMFont::create(curGDVer.c_str(), "bigFont.fnt");
 		
 		auto menuHeight = getContentHeight();
 		auto menuWidth = getContentWidth();
