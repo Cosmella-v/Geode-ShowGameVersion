@@ -12,7 +12,7 @@ class $modify(MenuLayer) {
 		auto confDebug = Mod::get()->getSettingValue<bool>("debug-enabled");
 		
 		// Got some help in DMs with this, cpp really isnt that intuitive to me.
-		auto curGDVer = "v" + Loader::get()->getGameVersion() + "\n" + "cocos: " cocos2d::cocos2dVersion();
+		auto curGDVer = "v" + Loader::get()->getGameVersion() + "\n" + "cocos: " + cocos2d::cocos2dVersion();
 		auto verLabel = CCLabelBMFont::create(curGDVer.c_str(), "bigFont.fnt");
 		
 		auto menuHeight = getContentHeight();
